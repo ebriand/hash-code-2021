@@ -1,0 +1,46 @@
+{
+  "id": "5751229732880384",
+  "name": "Practice Round",
+  "problemBlobKey": "blob/AMIfv958SKujkfG4HllHg1mxZ3ZeBs77klzL-hKb6oRCW4YT29v6DPQYPYbbL4hdIqoCFgsFp5n8-TGfJr4aogxOGFXN6lRGb8ZMg8LscSPxS4D1mYUYFAhjI5jqdJIaejOzPqA9CQuwfZnBqSQcaI4gK5C0rL6duEIX2NrgLBQ6OdjfA-4cR2Vzk7Xu5qfRJRTkdCTHpD5JxDh4esxPvDAvi_9y8bbLbpiFCjiTfq3FdfD7nxjLtEUxEItLcegB3KxBxhLnfUOFpP-guHUGbOWLPOHYATO7SQ",
+  "scorerLabel": "ingredients",
+  "insightsEnabled": false,
+  "visualizationsEnabled": false,
+  "hideScoreboard": true,
+  "publicScoreboard": false,
+  "hubScoreboard": false,
+  "finalistOnly": false,
+  "active": true,
+  "start": "2021-01-05T16:00:00.000Z",
+  "end": "2021-02-25T11:00:00.000Z",
+  "unfrozen": false,
+  "dataSets": [
+    {
+      "id": "4660556946472960",
+      "name": "A – Example",
+      "inputBlobKey": "blob/AMIfv94rIpen9dlAJv1EOl_ChxLD6bIsvFrUSy9T2xLvUedMNaa-HuleQiCvD1X2oWbjHy33fZqyKze2lQTpnA5ECX-30ijMIDcnGmRtTQKzMkX3ddBjCxgdn5SKGP0rXaIx1cLk2IT4GMmABU6fVRf4F0oOqEgAy5UKutDy0l7aVz7l6bf3MX62hfY-GBoHGmB5Fl7Ca3Qab2wdTbllfY8NA-8WQ5vJtMit4UO3cyzDGpHiO0X-RjxOqB9nEtVW-Mx-PESZJYie2TRK31x2UjFeJvCarBqARg"
+    },
+    {
+      "id": "5953742742487040",
+      "name": "B – A little bit of everything",
+      "inputBlobKey": "blob/AMIfv94y_VcmgR_YvD7X_Jaq83oFs5xow2ZOgQGNh4FFpdbM0CXJ2isScN_JsXELBLFOEJoPCMD75yTftrtjStvMjK8_3h5e0couNZfj1X9-Ue4XwP7FXV7LL5vcEA8caSZ2wwPDhw8bwT8ap4KJAasFZBFHYI2jukzCHPrqb1vyFlc00FDpFoI4nA2qSho1Poc3fvNCgEVhtxDVO0O3Mm9v6-crcgJdVAuvW0BMJjOixCDF7Jb6KxNcjR39_UTnflbEhRfVGK17bvuhHdKcFtQWFCbFT9sWgxeFTc4fWktuA2pPJjqBnM0"
+    },
+    {
+      "id": "5983944499527680",
+      "name": "C – Many ingredients",
+      "inputBlobKey": "blob/AMIfv967IecxpDA69Qz0-uIiS6miWJyyw_VLE_5J3WurzjsePq06IjYVoHiXVMNA_Z8nk-h2uXJfsAT0T4DVTWoGApMz47GUmRe3xWaxeI7tBtGSs2VjtfJC-8FTFYAz1fqsV32X-QrUk22lM61Qbzq-CHWexVye1rNrOeMWntHtxUzQCHCvyCdVVBPkKloRoEpJgNzG58xxUoEKRcAxaFZNQpj8S5eDnYvmDQq_9WLoYHht7ntiwW421SllxCgU0wpNkCLP-vNOahYf36N0URUVfkJ7_kMupA"
+    },
+    {
+      "id": "5378285391314944",
+      "name": "D – Many pizzas",
+      "inputBlobKey": "blob/AMIfv96TF6uVolbSMlQoZFFVJ4Gwm1njFqlGFBz-p-mAfuFdyzoPl6YhqHiOD5C6K6BIEJQ1hcB3rIBmritzCOCCliGRQbQhk_IEWCGINhLgCKape3EG7CaOqBqr-9Nq6wFyb9iutIJmdN_s7QnrC-0hh9pm7FWbvtTvU_T-PB1_jws8_WCWCMMSXtX8qfYzh2lyPx_46i--AbvcPoZFHQZkY1baYcQppSJI0wjCHXaRdV-wgPBLwr6pek2WeBVBymLcSxIFPhVKTVTRNq4XZMrfR7RKQBkXDw"
+    },
+    {
+      "id": "6049571599810560",
+      "name": "E – Many teams",
+      "inputBlobKey": "blob/AMIfv96aeeZBc6rvd0WriHYTvzKjrMOIQ5RGxUo_8YQiWDm7le5Bul5wRfjCoKXFV1I58oOknkJSxwQNwnz9i1mXv2TYrbUWIjbOWhh-G4SBBtRbPMW9MClOJuH4X3EJZ6wuS80nmsV_G5pXvfoKGB-Hgx1VXWKpEjl6enR-HC0L3KRUehxRdY-eSsfTsn8ol72j_PCaEJ7ei_50rf-YTUn30Dlc1P0pwH-8eBjK7fbOL2jg4fpVeTjFVqbVXMvDFr1TRWzIdYcIDwEfvZXnos8EFw_TqmbXAw"
+    }
+  ],
+  "open": true,
+  "scoreboardFrozen": false,
+  "started": true
+}
