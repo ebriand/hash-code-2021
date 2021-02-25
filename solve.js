@@ -2,8 +2,8 @@ const debug = require("debug")("solve");
 const _ = require("lodash");
 const gridUtils = require("./grid-utils");
 
-function solve({ parsedValue: { streets, cars } }, file) {
-  cars = filterTimedoutCars(cars);
+function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
+  cars = filterTimedoutCars(simulationSeconds, cars);
   sortCarsByNumberOfStreets(cars);
   const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
@@ -17,11 +17,15 @@ function solve({ parsedValue: { streets, cars } }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds: Math.ceil(streetsByJam.get(name) / 3) || 1
+        seconds: Math.ceil(streetsByJam.get(name) / 5) || 1
       }))
     }))
   };
   return result;
+}
+
+function filterTimedoutCars(simulationDuration, streets, cars) {
+  return cars;
 }
 
 function sortCarsByNumberOfStreets(cars) {
