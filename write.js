@@ -11,6 +11,6 @@ function writeLines(path, lines) {
   debug(`wrote ${lines.length} lines to ${path}`);
 }
 
-const unparse = _.constant([]);
+const unparse = _.constant(["0"]);
 
 module.exports.unparse = unparse;

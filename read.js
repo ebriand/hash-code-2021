@@ -2,7 +2,7 @@ const _ = require("lodash/fp");
 const assert = require("assert");
 const debug = require("debug")("read");
 const fs = require("fs");
-const jolicitron = require("./jolicitron");
+const jolicitron = require("jolicitron");
 
 module.exports = function read(filePath) {
   const cachedFile = `${filePath.split(".")[0]}.in.json`;
@@ -28,9 +28,24 @@ module.exports = function read(filePath) {
 };
 
 const parse = inputText => {
-  const value = jolicitron([], inputText);
+  const parser = jolicitron((save, n) => [
+    "simulationSeconds",
+    "numberOfIntersections",
+    save("numberOfStreets"),
+    save("numberOfCars"),
+    "destinationScore",
+    n(
+      "streets",
+      { indices: true },
+      "intersectionStart",
+      "intersectionEnd",
+      "name",
+      "duration"
+    ),
+    n("cars", { indices: true }, save(), n("path"))
+  ]);
   debug("end");
-  return value;
+  return parser(inputText);
 };
 
 const assertValid = _.tap(parserOutput => {});
