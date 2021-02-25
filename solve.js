@@ -32,7 +32,7 @@ function solve(problem, file) {
         index: 2,
         streets: [
           {
-            name: "rue-de-mouscou",
+            name: "rue-de-moscou",
             seconds: 1
           }
         ]
