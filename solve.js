@@ -2,44 +2,39 @@ const debug = require("debug")("solve");
 const _ = require("lodash");
 const gridUtils = require("./grid-utils");
 
-function solve(problem, file) {
+function solve({ parsedValue }, file) {
+  const intersections = getIntersections(parsedValue.streets);
+
   const result = {
-    numberOfIntersections: 3,
-    intersections: [
-      {
-        index: 1,
-        streets: [
-          {
-            name: "rue-d-athenes",
-            seconds: 2
-          },
-          {
-            name: "rue-d-amsterdam",
-            seconds: 1
-          }
-        ]
-      },
-      {
-        index: 0,
-        streets: [
-          {
-            name: "rue-de-londres",
-            seconds: 2
-          }
-        ]
-      },
-      {
-        index: 2,
-        streets: [
-          {
-            name: "rue-de-moscou",
-            seconds: 1
-          }
-        ]
-      }
-    ]
+    numberOfIntersections: Object.keys(intersections).length,
+    intersections: Object.entries(intersections).map(([index, streets]) => ({
+      index,
+      streets: streets.streets.map(({ name }) => ({ name, seconds: 1 }))
+    }))
   };
+  debug(result);
   return result;
+}
+
+function getIntersections(streets) {
+  // {
+  //   "index": 0,
+  //   "intersectionStart": 2,
+  //   "intersectionEnd": 0,
+  //   "name": "rue-de-londres",
+  //   "duration": 1
+  // },
+  const intersections = {};
+  streets.forEach(street => {
+    if (!intersections[street.intersectionEnd]) {
+      intersections[street.intersectionEnd] = {
+        streets: [street]
+      };
+    } else {
+      intersections[street.intersectionEnd].streets.push(street);
+    }
+  });
+  return intersections;
 }
 
 module.exports = solve;
