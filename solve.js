@@ -6,9 +6,17 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
   sortCarsByNumberOfStreets(cars);
   const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
+  const streetLength = streets.reduce((map, street) => {
+    map[street.name] = street.duration;
+    return map;
+  }, {});
   const streetsByJam = countCarIntersections(
     cars.slice(0, Math.ceil((cars.length * 40) / 100))
   );
+
+  const distance = calcCarDistance(cars, streetLength);
+
+  //debug(distance);
 
   const result = {
     numberOfIntersections: Object.keys(intersections).length,
@@ -16,7 +24,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds: Math.ceil(streetsByJam.get(name) / 4) || 1
+        seconds: distance.get(name).reduce((a, b) => b - a) || 1
       }))
     }))
   };
@@ -41,6 +49,20 @@ function countCarIntersections(cars) {
       streets.set(rue, (streets.get(rue) || 0) + 1);
     });
   });
+  return streets;
+}
+
+function calcCarDistance(cars, streetLength) {
+  let streets = new Map();
+  cars.forEach(car => {
+    let time = 0;
+    car.path.forEach(rue => {
+      if (!streets.has(rue)) streets.set(rue, []);
+      streets.get(rue).push(time);
+      time += streetLength[rue] + 1;
+    });
+  });
+  streets.forEach(value => value.sort((a, b) => b - a));
   return streets;
 }
 
