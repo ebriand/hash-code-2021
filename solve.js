@@ -8,12 +8,16 @@ function solve({ parsedValue }, file) {
     parsedValue.cars
   );
   const intersections = getIntersections(streetsWithCars);
+  const streetsByJam = countCarIntersections(parsedValue.cars);
 
   const result = {
     numberOfIntersections: Object.keys(intersections).length,
     intersections: Object.entries(intersections).map(([index, streets]) => ({
       index,
-      streets: streets.streets.map(({ name }) => ({ name, seconds: 1 }))
+      streets: streets.streets.map(({ name }) => ({
+        name,
+        seconds: streetsByJam.get(name)
+      }))
     }))
   };
   return result;
@@ -25,6 +29,16 @@ function getStreetsWithCars(streets, cars) {
   );
   debug(streets.length, streetsWithCars.length);
   return streetsWithCars;
+}
+
+function countCarIntersections(cars) {
+  let streets = new Map();
+  cars.forEach(car => {
+    car.path.forEach(rue => {
+      streets.set(rue, (streets.get(rue) || 0) + 1);
+    });
+  });
+  return streets;
 }
 
 function getIntersections(streets) {
