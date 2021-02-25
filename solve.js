@@ -24,11 +24,13 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds:
-          Math.min(
-            distance.get(name).reduce((a, b) => b - a),
-            simulationSeconds - 1
-          ) || 1
+        seconds: Math.min(
+          Math.max(
+            1,
+            distance.get(name).reduce((a, b) => b - a)
+          ),
+          simulationSeconds - 1
+        )
       }))
     }))
   };
