@@ -3,7 +3,7 @@ const _ = require("lodash");
 const gridUtils = require("./grid-utils");
 
 function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
-  cars = filterTimedoutCars(simulationSeconds, cars);
+  cars = filterTimedoutCars(simulationSeconds, streets, cars);
   sortCarsByNumberOfStreets(cars);
   const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
@@ -17,7 +17,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds: Math.ceil(streetsByJam.get(name) / 5) || 1
+        seconds: Math.ceil(streetsByJam.get(name) / 6) || 1
       }))
     }))
   };
@@ -25,6 +25,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
 }
 
 function filterTimedoutCars(simulationDuration, streets, cars) {
+  cars.map(car => ({ ...car, timeToDestination: car.path.reduce((a, c)) }, 0));
   return cars;
 }
 
