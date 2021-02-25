@@ -2,13 +2,13 @@ const debug = require("debug")("solve");
 const _ = require("lodash");
 const gridUtils = require("./grid-utils");
 
-function solve({ parsedValue }, file) {
-  const streetsWithCars = getStreetsWithCars(
-    parsedValue.streets,
-    parsedValue.cars
-  );
+function solve({ parsedValue: { streets, cars } }, file) {
+  sortCarsByNumberOfStreets(cars);
+  const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
-  const streetsByJam = countCarIntersections(parsedValue.cars);
+  const streetsByJam = countCarIntersections(
+    cars.slice(0, Math.ceil((cars.length * 40) / 100))
+  );
 
   const result = {
     numberOfIntersections: Object.keys(intersections).length,
@@ -23,11 +23,14 @@ function solve({ parsedValue }, file) {
   return result;
 }
 
+function sortCarsByNumberOfStreets(cars) {
+  cars.sort((c1, c2) => c1.path.length - c2.path.length);
+}
+
 function getStreetsWithCars(streets, cars) {
   const streetsWithCars = streets.filter(street =>
     cars.some(car => car.path.includes(street.name))
   );
-  debug(streets.length, streetsWithCars.length);
   return streetsWithCars;
 }
 
