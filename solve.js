@@ -27,7 +27,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
         seconds:
           Math.min(
             distance.get(name).reduce((a, b) => b - a),
-            simulationSeconds
+            simulationSeconds - 1
           ) || 1
       }))
     }))
