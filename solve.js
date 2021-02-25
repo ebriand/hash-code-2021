@@ -7,7 +7,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
   const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
   const streetsByJam = countCarIntersections(
-    cars.slice(0, Math.ceil((cars.length * 40) / 100))
+    cars // .slice(0, Math.ceil((cars.length * 40) / 100))
   );
 
   const result = {
@@ -16,7 +16,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds: Math.ceil(Math.log(streetsByJam.get(name))) || 1
+        seconds: Math.ceil(streetsByJam.get(name) / 4) || 1
       }))
     }))
   };
