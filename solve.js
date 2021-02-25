@@ -16,7 +16,7 @@ function solve({ parsedValue }, file) {
       index,
       streets: streets.streets.map(({ name }) => ({
         name,
-        seconds: streetsByJam.get(name)
+        seconds: Math.ceil(streetsByJam.get(name) / 2) || 1
       }))
     }))
   };
