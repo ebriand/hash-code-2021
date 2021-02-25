@@ -19,32 +19,37 @@
     "pg:stop": "docker container stop postgres_hash_code",
     "pg:rm": "docker container rm postgres_hash_code",
     "all": "cross-env DEBUG_COLORS=1 run-p --aggregate-output --continue-on-error --print-label --silent input:*",
-    "input:1": "cross-env npm start a-example.in.txt",
-    "input:2": "cross-env npm start b-a-little-bit-of-everything.in.txt",
-    "input:3": "cross-env npm start c-many-ingredients.in.txt",
-    "input:4": "cross-env npm start d-many-pizzas.in.txt",
-    "input:5": "cross-env npm start e-many-teams.in.txt"
+    "input:1": "cross-env npm start a-an-example.in.txt",
+    "input:2": "cross-env npm start b-by-the-ocean.in.txt",
+    "input:3": "cross-env npm start c-checkmate.in.txt",
+    "input:4": "cross-env npm start d-daily-commute.in.txt",
+    "input:5": "cross-env npm start e-etoile.in.txt",
+    "input:6": "cross-env npm start f-forever-jammed.in.txt"
   },
   "config": {
     "input1": {
-      "id": "4660556946472960",
-      "name": "a-example"
+      "id": "5543518403559424",
+      "name": "a-an-example"
     },
     "input2": {
-      "id": "5953742742487040",
-      "name": "b-a-little-bit-of-everything"
+      "id": "5540597825798144",
+      "name": "b-by-the-ocean"
     },
     "input3": {
-      "id": "5983944499527680",
-      "name": "c-many-ingredients"
+      "id": "6262431235964928",
+      "name": "c-checkmate"
     },
     "input4": {
-      "id": "5378285391314944",
-      "name": "d-many-pizzas"
+      "id": "4621480595816448",
+      "name": "d-daily-commute"
     },
     "input5": {
-      "id": "6049571599810560",
-      "name": "e-many-teams"
+      "id": "5866263452581888",
+      "name": "e-etoile"
+    },
+    "input6": {
+      "id": "4628724729249792",
+      "name": "f-forever-jammed"
     }
   },
   "repository": {

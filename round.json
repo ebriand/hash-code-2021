@@ -1,43 +1,54 @@
 {
-  "id": "5751229732880384",
-  "name": "Practice Round",
-  "problemBlobKey": "blob/AMIfv958SKujkfG4HllHg1mxZ3ZeBs77klzL-hKb6oRCW4YT29v6DPQYPYbbL4hdIqoCFgsFp5n8-TGfJr4aogxOGFXN6lRGb8ZMg8LscSPxS4D1mYUYFAhjI5jqdJIaejOzPqA9CQuwfZnBqSQcaI4gK5C0rL6duEIX2NrgLBQ6OdjfA-4cR2Vzk7Xu5qfRJRTkdCTHpD5JxDh4esxPvDAvi_9y8bbLbpiFCjiTfq3FdfD7nxjLtEUxEItLcegB3KxBxhLnfUOFpP-guHUGbOWLPOHYATO7SQ",
-  "scorerLabel": "ingredients",
-  "insightsEnabled": false,
-  "visualizationsEnabled": false,
-  "hideScoreboard": true,
-  "publicScoreboard": false,
-  "hubScoreboard": false,
+  "id": "5879728443490304",
+  "name": "Online Qualifications",
+  "problemBlobKey": "blob/AMIfv94X6tBYG-yBohlbYh13va4qVOgVrUYeBg3D-EzqvupLro-MQ1-zYFBxlC7Zi91osWW_LLazfyN-WJ7aF0fjzvRW1lwxv5Djf4ta9KElHlq3rPnzojHT7HYUvt8Ymi_yU1hYg0zU8ydfciGo8GY32puuPgkX4R3JbBgkxE7VbuuRCc2YJAe9iJ5L__MLnkvttuFC7iDnHLJq7wbDQ9YgfMbnhNQs2l4K1mFm4VW9xWAxioky7uiCeYb-Res1w4VUH82KbacphAEtTzjpo7GAws8Jp0MRxnM1lypbKc1Mua6_AulffwE",
+  "scorerLabel": "traffic",
+  "insightsEnabled": true,
+  "visualizationsEnabled": true,
+  "hideScoreboard": false,
+  "publicScoreboard": true,
+  "hubScoreboard": true,
   "finalistOnly": false,
   "active": true,
-  "start": "2021-01-05T16:00:00.000Z",
-  "end": "2021-02-25T11:00:00.000Z",
+  "livestreamStart": "2021-02-25T17:30:00.000Z",
+  "start": "2021-02-25T17:45:00.000Z",
+  "end": "2021-02-25T21:30:00.000Z",
+  "freezeStart": "2021-02-25T20:30:00.000Z",
   "unfrozen": false,
   "dataSets": [
     {
-      "id": "4660556946472960",
-      "name": "A – Example",
-      "inputBlobKey": "blob/AMIfv94rIpen9dlAJv1EOl_ChxLD6bIsvFrUSy9T2xLvUedMNaa-HuleQiCvD1X2oWbjHy33fZqyKze2lQTpnA5ECX-30ijMIDcnGmRtTQKzMkX3ddBjCxgdn5SKGP0rXaIx1cLk2IT4GMmABU6fVRf4F0oOqEgAy5UKutDy0l7aVz7l6bf3MX62hfY-GBoHGmB5Fl7Ca3Qab2wdTbllfY8NA-8WQ5vJtMit4UO3cyzDGpHiO0X-RjxOqB9nEtVW-Mx-PESZJYie2TRK31x2UjFeJvCarBqARg"
+      "id": "5543518403559424",
+      "name": "A – An example",
+      "inputBlobKey": "blob/AMIfv95fHif7-4NiqH4rniD1d_xmcEXSUReAAbqpvJ2mZmydnsf_zJAhz_eqevqKzuqO_PBL4xBTU-EIwyufQaIW3hvKWDKgnyQQOlF8MN9c502XWAotCPSnneZ9eIg01puccc8q_cbceVdMN2_kYxwMh6bqxOTNoslyGoswWNMpghV-Dfs0rN4Tjdq9d3P_8wSO4BuG7eCPUPjqb4yIMpmTR8WHTF39Pdjf9rjwvd_f6e2_c3TumkMw88v3Zj31p6_CSrLU_Vk2VGZDD5thZIhN6OE1lpbwNjR7aFjprTrb7T6Le4WHN3M",
+      "sidecarBlobKey": "blob/AMIfv95XcdLdW1l47Uxrlqtx5cIddju3VF3YBqow0VZxGhbSqDGpQBtla1URFE3ChACYPJnnft0zxVSzfvliB_6dQunpLNBWD3DipQE4nik8HnG9u9NwhjBhqGt4Z2uxq549YrUqyfVTuYGW8YIuDqfBffWANoiGpjoE4bzygO8B8azkNOwa7TTOxbySggXe9bwkLISah2eZx2ER5N98T9zv5MWaXh0OJdKZb5HEjzbvmBCtuw1_4C0bY9dfhqh3fuRRjn5E77Oc-Jz63szlgOiPQr2SHspOc0nXlgqkuZinIJXTagLh5Yo"
     },
     {
-      "id": "5953742742487040",
-      "name": "B – A little bit of everything",
-      "inputBlobKey": "blob/AMIfv94y_VcmgR_YvD7X_Jaq83oFs5xow2ZOgQGNh4FFpdbM0CXJ2isScN_JsXELBLFOEJoPCMD75yTftrtjStvMjK8_3h5e0couNZfj1X9-Ue4XwP7FXV7LL5vcEA8caSZ2wwPDhw8bwT8ap4KJAasFZBFHYI2jukzCHPrqb1vyFlc00FDpFoI4nA2qSho1Poc3fvNCgEVhtxDVO0O3Mm9v6-crcgJdVAuvW0BMJjOixCDF7Jb6KxNcjR39_UTnflbEhRfVGK17bvuhHdKcFtQWFCbFT9sWgxeFTc4fWktuA2pPJjqBnM0"
+      "id": "5540597825798144",
+      "name": "B – By the ocean",
+      "inputBlobKey": "blob/AMIfv97MskR-EI17q2IK9q2iO8bYf5esDAw5VAjTO2sNux5wbIP85m9qSLIaNV8eyg51qxHtTYI4hXgpAaB4P8dfhxGV_zhh5xYEMIDvlHpHxgOLXOga7wBRvilQrlFWqiQ1VILchJFDJ4eIf6F84WPD_yXxNG1EVBOx80XdFYlOIHkbTllmAfVhY_pAcxvf4WIj0oFRYQadAjSEaO6nNrt8rS_0mxTDORHrsY_kuK_kfL89ozLNmCdvl1vNBKGkA_2N2GFzDdTBvxTMM3J01ZTC3nhUixWNlQ",
+      "sidecarBlobKey": "blob/AMIfv964JUXbJLE9YcjqSccuS-HjB9OO-XiMeYhaM0nu_t75QRhA6YPCvjr3ce0I_AlzTOzGFaLT511vaCVF33i1UN2fxh6rQ4YErEgIKtsoiXR32Tc3IYakLGc60WiqSQaXoIr4KzlkwJhl33nBaLUSVUMTPW0e-o7RqMsWfkhskeTGleBO0X2VuBeBGWkClHWK9eEqmLh8y7-Yc2Z5gp53qbwUWt1fopt7gaHMyHJ4O29BCmyeBltAbCrlZpp7andWxVk7q_vsXFKE25OmV0fDuucpIK4mNkuUVmJ3sSTcv7rstqMPXGA"
     },
     {
-      "id": "5983944499527680",
-      "name": "C – Many ingredients",
-      "inputBlobKey": "blob/AMIfv967IecxpDA69Qz0-uIiS6miWJyyw_VLE_5J3WurzjsePq06IjYVoHiXVMNA_Z8nk-h2uXJfsAT0T4DVTWoGApMz47GUmRe3xWaxeI7tBtGSs2VjtfJC-8FTFYAz1fqsV32X-QrUk22lM61Qbzq-CHWexVye1rNrOeMWntHtxUzQCHCvyCdVVBPkKloRoEpJgNzG58xxUoEKRcAxaFZNQpj8S5eDnYvmDQq_9WLoYHht7ntiwW421SllxCgU0wpNkCLP-vNOahYf36N0URUVfkJ7_kMupA"
+      "id": "6262431235964928",
+      "name": "C – Checkmate",
+      "inputBlobKey": "blob/AMIfv97sNKpWraFT2U17JsJg4E_2fGOF6fxM6OhHBxHCa8WYAaxB4sBRScs38AOOD7OLFjdnHP57pYrB3fUheAw3hWARCyOY1KrJ7lgRNS1tw_PHwgEXA3vclPPJPRRpctxh05lnNnZnv1LnjaSZWTnoYAcg8kslb24wu6P5eDTyxF5m8WZOwF-w2s3Dno1szXOWfMw7qOym_GjWR_pGwS8KF8W3RO4Trmf3Zbv7QBlQsUG7DCh_qiP_q7rk1f7yELEkHspIBKFwFX-kePp5LEUXcazJUOcGhzMTT-DJdb5gMECFx6KogPQ",
+      "sidecarBlobKey": "blob/AMIfv95Gy8jDVY85_NsUYJoPnNCPocELoPEMADsGgscjJpdRE_O2FOm4iiI6dzGnmr__MYASm7itxomUs7jOStLUHZ9iB2Da6xREiCYZ07HPkzmrMYeDG3Clzk5n6O8-ft9FBJuGd2H2PyqQ623UTi37-ZDF1Q4wWFDLABBAFub5sOrtn3JoI8_9MotiI5nbw6C7BZR2vEomJNIs-e8r8LZrKMlGjPHVX5THO5fkytJq7IniP7DdRLCPR2hUmoTJI9Tc7cmTUd_iuR1HYZYT-7uz720wNRAjXcpkwXEnIIHTVw_Z9cnwRKw"
     },
     {
-      "id": "5378285391314944",
-      "name": "D – Many pizzas",
-      "inputBlobKey": "blob/AMIfv96TF6uVolbSMlQoZFFVJ4Gwm1njFqlGFBz-p-mAfuFdyzoPl6YhqHiOD5C6K6BIEJQ1hcB3rIBmritzCOCCliGRQbQhk_IEWCGINhLgCKape3EG7CaOqBqr-9Nq6wFyb9iutIJmdN_s7QnrC-0hh9pm7FWbvtTvU_T-PB1_jws8_WCWCMMSXtX8qfYzh2lyPx_46i--AbvcPoZFHQZkY1baYcQppSJI0wjCHXaRdV-wgPBLwr6pek2WeBVBymLcSxIFPhVKTVTRNq4XZMrfR7RKQBkXDw"
+      "id": "4621480595816448",
+      "name": "D – Daily commute",
+      "inputBlobKey": "blob/AMIfv96xxDce0XbguBkJouUntL-7av1nznjsg9Uq9Fo9_a1UXJnq0oZns3Hjpk7ntZd-k1Uub_o1e_nIllB3msC1LoabVzSx_f9yv6B4RnrxH_u9KSODiaXebnEBKovGiHrkSBtE7-21y1jwgAquWv7QONY9euyGBvmV7SrOz6r3SyeQ1qdqX8Jdld4WN-viZ7NFQyilBKAKZ6rnWNIZv7KUjenaNeHwGr4XA_OBAJ1jxS5nbTZ2kbwNtL5eePRUB1lOBaUz2RyNI0HP59tBEPEgCncM-nFzBovmqGFPjM-X3ilcOZSRX0g"
     },
     {
-      "id": "6049571599810560",
-      "name": "E – Many teams",
-      "inputBlobKey": "blob/AMIfv96aeeZBc6rvd0WriHYTvzKjrMOIQ5RGxUo_8YQiWDm7le5Bul5wRfjCoKXFV1I58oOknkJSxwQNwnz9i1mXv2TYrbUWIjbOWhh-G4SBBtRbPMW9MClOJuH4X3EJZ6wuS80nmsV_G5pXvfoKGB-Hgx1VXWKpEjl6enR-HC0L3KRUehxRdY-eSsfTsn8ol72j_PCaEJ7ei_50rf-YTUn30Dlc1P0pwH-8eBjK7fbOL2jg4fpVeTjFVqbVXMvDFr1TRWzIdYcIDwEfvZXnos8EFw_TqmbXAw"
+      "id": "5866263452581888",
+      "name": "E – Etoile",
+      "inputBlobKey": "blob/AMIfv94joHMzgiu3eBS58FXS6pYq1wqm5UGYt7VyXvcg9RYxKg6Ql0VoL9nzUrxypGqrwPTzhDskysyk5ULXNoa9_1_hB7gSJQ29mCmdkIeYziHts9SU2hWk40kiznOM9U_UZnBST-ywbvIxwrLyH8YHKa2Nfis__7GO1I72pa0Ba1NYnUJcf5kv3JARyklvO9ir7VMN4YXA4gHxMwyIFvKqb2HohArAAooOVtcL5IKk5hlqbzQ09f71q6_20RQMbtxc-SCSYVTVOuQXa5FiyL6AKpA9o7VIeuQo1BcRiiNNNdxNwgWn638",
+      "sidecarBlobKey": "blob/AMIfv95rwSSwJQy7GsKF8CKou1Nyq_I0GyYkJtfnUF8QSZgLMSNx1N3mgHfe2Z6LKys2wwOK79Ym5-raFjprSK_O3wB0lW8JuQfFzo-9ZEh2uMLY7RKNCKsbMm3iSmA7y7HBCWlqXS2-39LctUFGJwgqwSoxYF81wC-OFBx4uuhziNdxsui5vDVS6XzHjktTH-QGJho69ubTGSfVy0O0kmBfhA-pZxQ3UOiHLPjd1R-vrPQdkPDUgGyQ7xjq5R-kqi1A8nonhbDuxtY_ntbhL_mJtRhEtecPkGU4DnBiI-0BZEIRMJ4eoLU"
+    },
+    {
+      "id": "4628724729249792",
+      "name": "F – Forever jammed",
+      "inputBlobKey": "blob/AMIfv9642qOFDtOeZX71b_aOT3bySD4kGW6xilgXWkxEv3jvcgjEbIrzAdGXSGdsT5mRH14UuAbSAa7dk0n-Qr0_LnUg3UaDNWRSjf3n-r_aPrPlLg-7tWBp2gL-S0KDFjXB_gOKjH5jK4A2qWkFJBKtN3oLBTvU6biYjzQegNFustTjzlqSYNoHji8sH7F45_TH9ARW6_exu9w46Hkr2Aa5mTNOjXOEQQ62sXOmKwHXEBWode-tcwr_HHoIwBj_pqRNxv3-sWjIOQfhocqs2qeV5hSAjQAy91rIaQDo5ij1GwhM6MnT-i8"
     }
   ],
   "open": true,
