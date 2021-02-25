@@ -7,7 +7,7 @@ function solve({ parsedValue: { simulationSeconds, streets, cars } }, file) {
   const streetsWithCars = getStreetsWithCars(streets, cars);
   const intersections = getIntersections(streetsWithCars);
   const streetsByJam = countCarIntersections(
-    cars.slice(0, Math.ceil((cars.length * 20) / 100))
+    cars.slice(0, Math.ceil((cars.length * 50) / 100))
   );
 
   const result = {
