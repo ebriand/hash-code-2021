@@ -13,7 +13,7 @@ function solve({ parsedValue }, file) {
     numberOfIntersections: Object.keys(intersections).length,
     intersections: Object.entries(intersections).map(([index, streets]) => ({
       index,
-      streets: streets.streets.map(({ name }) => ({ name, seconds: 2 }))
+      streets: streets.streets.map(({ name }) => ({ name, seconds: 1 }))
     }))
   };
   return result;
