@@ -3,7 +3,11 @@ const _ = require("lodash");
 const gridUtils = require("./grid-utils");
 
 function solve({ parsedValue }, file) {
-  const intersections = getIntersections(parsedValue.streets);
+  const streetsWithCars = getStreetsWithCars(
+    parsedValue.streets,
+    parsedValue.cars
+  );
+  const intersections = getIntersections(streetsWithCars);
 
   const result = {
     numberOfIntersections: Object.keys(intersections).length,
@@ -14,6 +18,14 @@ function solve({ parsedValue }, file) {
   };
   debug(result);
   return result;
+}
+
+function getStreetsWithCars(streets, cars) {
+  const streetsWithCars = streets.filter(street =>
+    cars.some(car => car.path.contains(street.name))
+  );
+  debug(streetsWithCars);
+  return streetsWithCars;
 }
 
 function getIntersections(streets) {
