@@ -16,15 +16,14 @@ function solve({ parsedValue }, file) {
       streets: streets.streets.map(({ name }) => ({ name, seconds: 2 }))
     }))
   };
-  debug(result);
   return result;
 }
 
 function getStreetsWithCars(streets, cars) {
   const streetsWithCars = streets.filter(street =>
-    cars.some(car => car.path.contains(street.name))
+    cars.some(car => car.path.includes(street.name))
   );
-  debug(streetsWithCars);
+  debug(streets.length, streetsWithCars.length);
   return streetsWithCars;
 }
 
